@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Class Car
  */
 package autoservice;
 
@@ -23,12 +21,10 @@ public class Car implements Saleable, Rentable{
         name = "Default car name";
         speed = 90;
     } 
-    public Car(String carName, short carSpeed, Color carColor, int carRentPrice, int carSalePrice) {
+    public Car(String carName, short carSpeed, Color carColor) {
         name = carName;
         speed = carSpeed;
         color = carColor;
-        rentPrice = carRentPrice;
-        salePrice = carSalePrice;
     }
     
     public String getName() {

@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Java Autoservice
  */
 package autoservice;
 
@@ -12,46 +10,55 @@ import autoservice.Car.Color;
  * @author Turbotwins
  */
 public class Autoservice {
-
+    static Car kel, golf, jeni;
     /**
      * @param car
      * @param args the command line arguments
      */
-    private static void displayAutoservice(Car car1, Car car2, Car car3) {
-            System.out.println("Car name: " + car1.getName());
-            System.out.println("Car speed: " + car1.getSpeed());
-            System.out.println("Car color: " + car1.getColor());
-            System.out.println("CarRentingPrice: " + car1.getDailyRentPrice());
-            System.out.println("CarSalePrice: " + car1.getSalePrice());
+    private static void displayAutoservice() {
+            System.out.println("---------------Autoservice-----------------");
+            System.out.println("First Car");
+            System.out.println("Car name: " + kel.getName());
+            System.out.println("Car speed: " + kel.getSpeed());
+            System.out.println("Car color: " + kel.getColor());
+            System.out.println("CarRentingPrice: " + kel.getDailyRentPrice());
+            System.out.println("CarSalePrice: " + kel.getSalePrice());
             
-            System.out.println("Car name: " + car2.getName());
-            System.out.println("Car speed: " + car2.getSpeed());
-            System.out.println("Car color: " + car2.getColor());
-            System.out.println("CarRentingPrice: " + car2.getDailyRentPrice());
-            System.out.println("CarSalePrice: " + car2.getSalePrice());
+            System.out.println("Second Car");
+            System.out.println("Car name: " + golf.getName());
+            System.out.println("Car speed: " + golf.getSpeed());
+            System.out.println("Car color: " + golf.getColor());
+            System.out.println("CarRentingPrice: " + golf.getDailyRentPrice());
+            System.out.println("CarSalePrice: " + golf.getSalePrice());
             
-            System.out.println("Car name: " + car3.getName());
-            System.out.println("Car speed: " + car3.getSpeed());
-            System.out.println("Car color: " + car3.getColor());
-            System.out.println("CarRentingPrice: " + car3.getDailyRentPrice());
-            System.out.println("CarSalePrice: " + car3.getSalePrice());
+            System.out.println("Third Car");
+            System.out.println("Car name: " + jeni.getName());
+            System.out.println("Car speed: " + jeni.getSpeed());
+            System.out.println("Car color: " + jeni.getColor());
+            System.out.println("CarRentingPrice: " + jeni.getDailyRentPrice());
+            System.out.println("CarSalePrice: " + jeni.getSalePrice());
         }
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        Car kel = new Car("VW Golf 7", (short) 180, Color.BLUE, 80, 20000);
-        Car golf = new Car("VW Gofl 6", (short) 179, Color.RED, 75, 19500);
-        Car jeni = new Car("Ford Focus", (short) 191, Color.RED, 65, 18000);
+        kel = new Car("VW Golf 7", (short) 180, Color.BLUE);
+        golf = new Car("VW Gofl 6", (short) 179, Color.RED);
+        jeni = new Car("Ford Focus", (short) 191, Color.RED);
+        kel.setSalePrice(20000);
+        golf.setSalePrice(195000);
+        jeni.setSalePrice(18000);
+        kel.setRentPrice(75);
+        golf.setRentPrice(70);
+        jeni.setRentPrice(60);
         
-        displayAutoservice(kel, golf, jeni);
+        displayAutoservice();
         
         kel.increaseSpeed((short) (kel.getSpeed() + 10));
         golf.increaseSpeed((short) (golf.getSpeed() - 10));
         jeni.setRentPrice(jeni.getDailyRentPrice() + 15);
         jeni.setSalePrice(jeni.getSalePrice() - 1200);
         
-        displayAutoservice(kel, golf, jeni);
+        displayAutoservice();
     }
     
 }
