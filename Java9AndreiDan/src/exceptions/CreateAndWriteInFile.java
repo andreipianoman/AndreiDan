@@ -20,7 +20,7 @@ public class CreateAndWriteInFile {
      */
     public static void main(String[] args) {
         
-        File newbie = new File("E:\\Koding Stuph\\Shkoala eenformala\\Cur s Java\\Teme exceptions\\ write.txt");
+        File newbie = new File("E:\\Coding Stuff\\Scoala Informala\\Curs Java\\Teme Exceptions\\ write.txt");
         
         try {
             newbie.createNewFile();
