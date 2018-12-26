@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Fisierul contine toate cursurile.
+Fisierul contine toate cursurile
 -->
-
 
 <cursuri>
     <curs denumire="HTML 5">
         <students>20</students>
-        <zi>Sambata</zi>
+        <zi>sambata</zi>
     </curs>
-    <curs denumire="CSS 3">
+    <curs denumire="CSS 5">
         <students>20</students>
-        <zi>Vineri</zi>
-    </curs>
+        <zi>vineri</zi>
+    </curs>    
     <curs denumire="JAVA">
         <students>20</students>
-        <zi>Luni</zi>
-    </curs>
+        <zi>luni</zi>
+    </curs>    
 </cursuri>

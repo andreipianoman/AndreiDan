@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><users>
+    
+    <user id="1">
+        <username>user1</username>
+        <password>pass1</password>
+    </user>
+    <user id="2">
+        <username>user2</username>
+        <password>pass2</password>
+    </user>
+    <user id="3">
+        <username>user3</username>
+        <password>pass3</password>
+    </user>
+    <user id="4">
+        <username>user4</username>
+        <password>pass4</password>
+    </user>
+    </users>
